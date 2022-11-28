@@ -1,5 +1,7 @@
 .ReportesContent {
-  min-width: 90%;
+  max-width: 85%;
+  margin: auto;
+  margin-right: 3%;
   min-height: 100%;
   right: 0;
   position: absolute;
@@ -41,7 +43,7 @@
 .gridReportes {
   min-width: 100%;
   display: grid;
-  grid-template-columns: 0.15fr repeat(5, 0.25fr);
+  grid-template-columns: 0.25fr repeat(7, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 2px;
   grid-row-gap: 0px;
@@ -66,10 +68,22 @@
   margin-bottom: 0.5rem;
 }
 
-.gridReportesList {
+.gridReportesList2 {
+  max-width: 100%;
   min-width: 100%;
   display: grid;
-  grid-template-columns: 0.15fr repeat(5, 0.25fr);
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 2px;
+  grid-row-gap: 0px;
+  text-align: center;
+  align-items: center;
+}
+.gridReportesList {
+  max-width: 100%;
+  min-width: 100%;
+  display: grid;
+  grid-template-columns: 0.25fr repeat(7, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 2px;
   grid-row-gap: 0px;
@@ -110,7 +124,7 @@
 .querygrid {
   min-width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 10px;
   grid-row-gap: 0px;
@@ -128,11 +142,24 @@
   text-align: left;
   min-width: 10rem;
 }
-
+.addbotton2 {
+  margin: auto;
+  max-width: 10rem;
+  padding: 0.5rem;
+  background: linear-gradient(92.04deg, #607bdc 28.67%, #663bb6 77.93%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.addbottonText2 {
+  text-align: center;
+  font-family: "Rubik";
+  font-size: 18px;
+  color: #001049;
+}
 .queryaplicate {
   background-color: #fff;
   max-width: 100%;
-  min-width: 20rem;
+  min-width: 90%;
 }
 
 .queryitemfecha {

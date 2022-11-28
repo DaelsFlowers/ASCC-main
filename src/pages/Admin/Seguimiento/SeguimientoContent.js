@@ -32,6 +32,8 @@ const SeguimientoContent = () => {
             getClients();
         } else if (seguimientoCategoria === "Prospectos") {
             getProspectos();
+        } else {
+            getClients();
         }
     }, [seguimientoCategoria]);
 

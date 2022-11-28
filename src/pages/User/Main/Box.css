@@ -53,14 +53,14 @@
   font-family: "Rubik", sans-serif;
 }
 
-.Clientes {
+.Clientes2 {
   position: absolute;
-  width: 57.5%;
+  width: 90%;
   height: 45%;
   right: 0;
   margin-right: 4.5rem;
   background: #ffffff;
-  border-radius: 0px 50px 0px 0px;
+  border-radius: 50px 50px 0px 0px;
 }
 .clientes {
   margin: 1.5rem;

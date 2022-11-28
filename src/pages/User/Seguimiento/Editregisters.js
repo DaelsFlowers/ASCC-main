@@ -1,11 +1,10 @@
-import React from 'react';
+import React from 'react'
+import "./Editregisters.css"
+function Editregisters() {
 
-export default function Mycomponent(props) {
-    console.log(props)
     return (
-        <div>
-
-        </div>
-    );
+        <h1>HOLA MUNDO</h1>
+    )
 }
 
+export default Editregisters

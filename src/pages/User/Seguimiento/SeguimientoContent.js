@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import "./seguimientoContent.css"
-import { NavLink } from "react-router-dom";
 
 import ClientDataService from "../../services/Clients.services"
 import ProspectoDataService from "../../services/Prospectos.services"
+// import { db } from '../../services/firebase'
 
-import Mycomponent from './Editregisters';
-
-
-
+// import {
+//     getDoc,
+//     doc
+// } from 'firebase/firestore'
+// import { Link } from 'react-router-dom'
 
 const SeguimientoContent = () => {
 
@@ -16,22 +17,13 @@ const SeguimientoContent = () => {
     const [seguimientoCategoria, setSeguimientoCategoria] = useState([]);
 
 
-    const [RegisterId, setRegisterId] = useState("");
-    console.log(setRegisterId)
-
-    function getRegisterIdHandler() {
-        return (
-            <div>
-                <Mycomponent name="daysi" />
-            </div>
-        );
-    }
-
     useEffect(() => {
         if (seguimientoCategoria === "Clientes") {
             getClients();
         } else if (seguimientoCategoria === "Prospectos") {
             getProspectos();
+        } else {
+            getClients();
         }
     }, [seguimientoCategoria]);
 
@@ -59,6 +51,7 @@ const SeguimientoContent = () => {
                 </div>
                 <div className='SeguiminetoTittle'>
                     SEGUIMIENTO
+
                 </div>
                 <div className='listSeguimineto'>
                     <div className='SeguiminetoContentTags'>
@@ -73,32 +66,37 @@ const SeguimientoContent = () => {
                             <div className='items'>FAVORITOS</div>
                         </div>
                     </div>
-                    <NavLink to={{ pathname: "/EditarRegistro", state: { tittle: RegisterId } }}>
-                        {clients.map((doc, index) => {
-                            return (
-                                <div className='sqllist' onClick={(e) => { getRegisterIdHandler(doc.id) }}>
-                                    <div className='SeguiminetoContentList' key={doc.id} >
-                                        <div className='gridSeguimientoList'  >
-                                            <div className='itemsList'>{index + 1}</div>
-                                            <div className='itemsList'>{doc.nombre}</div>
-                                            <div className='itemsList'>{doc.empresa}</div>
-                                            <div className='itemsList'>{doc.puesto}</div>
-                                            <div className='itemsList'>{doc.email + " / " + doc.phone}</div>
-                                            <div className='itemsListEstatus'>
-                                                {doc.estatus}
-                                            </div>
-                                            <div className='itemsList'>{doc.etiqueta}</div>
-                                            <input disabled={true} type={"checkbox"} checked={doc.favorito} className='itemsList checkboxitem' />
+
+                    {clients.map((doc, index) => {
+                        return (
+                            <div className='sqllist' >
+
+                                <div className='SeguiminetoContentList' key={doc.id}  >
+
+                                    <div className='gridSeguimientoList'  >
+                                        <div className='itemsList'>{index + 1}</div>
+                                        <div className='itemsList'>{doc.nombre}</div>
+                                        <div className='itemsList'>{doc.empresa}</div>
+                                        <div className='itemsList'>{doc.puesto}</div>
+                                        <div className='itemsList'>{doc.email + " / " + doc.phone}</div>
+                                        <div className='itemsListEstatus'>
+                                            {doc.estatus}
                                         </div>
+                                        <div className='itemsList'>{doc.etiqueta}</div>
+                                        <input disabled={true} type={"checkbox"} checked={doc.favorito} className='itemsList checkboxitem' />
                                     </div>
+
                                 </div>
-                            )
-                        })}
-                    </NavLink>
+
+                            </div>
+                        )
+                    })}
                 </div>
             </div>
         </>
     )
+
+
 }
 
 export default SeguimientoContent

@@ -17,8 +17,7 @@ function Login({
         if (email !== null && password !== null) {
             signInWithEmailAndPassword(auth, email, password)
                 .then(() => {
-                    setUser(email)
-                    setAuthState('home')
+
                 });
         } else {
             alert("USUARIO NO ENCONTRADO");

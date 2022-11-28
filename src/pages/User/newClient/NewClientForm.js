@@ -119,9 +119,9 @@ const NewClientForm = () => {
                                 value={puesto}
                                 onChange={(e) => setPuesto(e.target.value)}>
                                 <option value="none"></option>
-                                <option value="a">A</option>
-                                <option value="b">B</option>
-                                <option value="c">C</option>
+                                <option value="a">GERENTE</option>
+                                <option value="b">RECURSOS HUMANOS</option>
+                                <option value="c">OTRO</option>
                             </select>
                         </div>
                     </div>

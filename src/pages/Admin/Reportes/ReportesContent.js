@@ -42,6 +42,7 @@ const ReportesContent = () => {
     const Total = Tcall + Tmsg + Tcall;
 
     return (
+
         <div className='ReportesContent'>
             <div className='ReportesTittle'>
                 REPORTES
@@ -50,7 +51,7 @@ const ReportesContent = () => {
                 <div className='querycontent'>
                     <div className='querygrid'>
                         <div className='queryitem'>
-                            TIPO
+                            TIPO DE REGISTRO
                             <br />
                             <select name="seguimientoCategoria"
                                 className='queryaplicate'
@@ -67,13 +68,20 @@ const ReportesContent = () => {
                                 className='queryaplicate'
                                 value={estatus}
                                 onChange={(e) => setEstatus(e.target.value)}>
-                                <option value="Nuevo">Nuevo</option>
-                                <option value="Contactado">Contactado</option>
-                                <option value="espera">En espera</option>
-                                <option value="Cancelado">Cancelado</option>
-                                <option value="Terminado">Terminado</option>
-
+                                <option value="CONTACTADO">CONTACTADO</option>
+                                <option value="ESPERA">ESPERA</option>
+                                <option value="TERMINADO">TERMINADO </option>
+                                <option value="NINGUNO">NINGUNO</option>
                             </select>
+                        </div>
+                        <div className='queryitem'>
+                            EMPLEADO
+                            <br />
+                            <input name="seguimientoCategoria"
+                                className='queryaplicate'
+                                value={estatus}
+                                onChange={(e) => setEstatus(e.target.value)}>
+                            </input>
                         </div>
 
                         <div className='queryitemfecha'>
@@ -94,7 +102,13 @@ const ReportesContent = () => {
                                 </div>
                             </div>
                         </div>
-
+                        <div className='queryitem'>
+                            <div className="addbotton2">
+                                <div className='addbottonText2'>
+                                    APLICAR
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -103,40 +117,54 @@ const ReportesContent = () => {
                     <div className='gridReportes'>
                         <div className='items'>#</div>
                         <div className='items'>FECHA</div>
+                        <div className='items'>EMPLEADO</div>
                         <div className='items'>CONTACTO</div>
                         <div className='items'>EMPRESA</div>
                         <div className='items'>ESTATUS</div>
                         <div className='items'>ANOTACIONES</div>
+                        <div className='items'>ULTIMA ACTUALIZACION</div>
                     </div>
                 </div>
                 {clients.map((doc, index) => {
                     return (
-                        <div className='sqllist'>
-                            <div className='ReportesContentList' key={doc.id}>
-                                <div className='gridReportesList'>
-                                    <div className='itemsList'>{index + 1 + " CLIENTES"}</div>
+                        <div className='sqllist' >
+
+                            <div className='ReportesContentList' key={doc.id}  >
+
+                                <div className='gridReportesList'  >
+                                    <div className='itemsList'>{index + 1}</div>
                                     <div className='itemsList'>{doc.dateReg}</div>
-                                    <div className='itemsList'>{doc.email + " / " + doc.phone}</div>
+                                    <div className='itemsList'>DANIEL FLORES</div>
                                     <div className='itemsList'>{doc.empresa}</div>
-                                    <div className='itemsList'>{doc.estatus}</div>
+                                    <div className='itemsList'>{doc.dateReg}</div>
+                                    <div className='itemsListEstatus'>
+                                        {doc.estatus}
+                                    </div>
                                     <div className='itemsList'>{doc.mensaje}</div>
+                                    <div className='itemsList'>{doc.dateReg}</div>
+
                                 </div>
+
                             </div>
+
                         </div>
                     )
-
                 })}
                 {prospect.map((doc, index) => {
                     return (
                         <div className='sqllist'>
                             <div className='ReportesContentList' key={doc.id}>
                                 <div className='gridReportesList'>
-                                    <div className='itemsList'>{index + 1 + " PROSPECTOS"}</div>
+                                    <div className='itemsList'>{index + 1}</div>
                                     <div className='itemsList'>{doc.dateReg}</div>
-                                    <div className='itemsList'>{doc.email + " / " + doc.phone}</div>
+                                    <div className='itemsList'>DANIEL FLORES</div>
                                     <div className='itemsList'>{doc.empresa}</div>
-                                    <div className='itemsList'>{doc.estatus}</div>
+                                    <div className='itemsList'>{doc.dateReg}</div>
+                                    <div className='itemsListEstatus'>
+                                        {doc.estatus}
+                                    </div>
                                     <div className='itemsList'>{doc.mensaje}</div>
+                                    <div className='itemsList'>{doc.dateReg}</div>
                                 </div>
                             </div>
                         </div>

@@ -117,10 +117,10 @@ const NewProspectoForm = () => {
                             <select name="puesto"
                                 value={puesto}
                                 onChange={(e) => setPuesto(e.target.value)}>
-                                <option value="volvo"></option>
-                                <option value="saab">A</option>
-                                <option value="mercedes">B</option>
-                                <option value="audi">C</option>
+                                <option value="none"></option>
+                                <option value="a">GERENTE</option>
+                                <option value="b">RECURSOS HUMANOS</option>
+                                <option value="c">OTRO</option>
                             </select>
                         </div>
                     </div>

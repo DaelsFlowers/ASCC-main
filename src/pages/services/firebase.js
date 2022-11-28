@@ -4,12 +4,12 @@ import { getFirestore } from "firebase/firestore"
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyChVi_QFLlmUuw8-5BCTDok9XlJXgvILpM",
-    authDomain: "ascc-41783.firebaseapp.com",
-    projectId: "ascc-41783",
-    storageBucket: "ascc-41783.appspot.com",
-    messagingSenderId: "857689294584",
-    appId: "1:857689294584:web:d3e80c51b1badffc7bdd0d"
+    apiKey: "AIzaSyCe1y1ZIBmcQq5UncR-e0J3h0SIUwSIGrg",
+    authDomain: "ascc-crm.firebaseapp.com",
+    projectId: "ascc-crm",
+    storageBucket: "ascc-crm.appspot.com",
+    messagingSenderId: "15054169650",
+    appId: "1:15054169650:web:d7900abbbe7bdbbb54be2b"
 };
 
 // Initialize Firebase

@@ -17,7 +17,7 @@ const PrincipalUsuarios = (props) => {
                     <Route path="/NewClient" element={<NewClient prop={props} />} />
                     <Route path="/NewProspecto" element={<NewProspecto prop={props} />} />
                     <Route path="/Seguimiento" element={<Seguimiento prop={props} />} />
-                    <Route path="/EditarRegistro" element={<Editregisters prop={props} />} />
+                    <Route path="/Editregisters" element={<Editregisters prop={props} />} />
                 </Route>
             </Routes>
         </BrowserRouter>
