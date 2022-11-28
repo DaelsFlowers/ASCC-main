@@ -1,6 +1,6 @@
 import React from 'react'
 import PrincipalUsuarios from '../User/PrincipalUsuarios'
-import PrincipalAdmin from '../Admin/Principal'
+import PrincipalAdmin from '../Admin/PrincipalAdmin'
 
 function UserControler({ user }) {
     return (

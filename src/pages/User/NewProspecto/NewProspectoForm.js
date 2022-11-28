@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "./newProspectoForm.css"
 
-import ProspectosCollectionRef from "../services/Prospectos.services"
+import ProspectosCollectionRef from "../../services/Prospectos.services"
 
 
 const NewProspectoForm = () => {

@@ -2,7 +2,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import React from 'react'
 
 
-import Main from '../Main/Main';
+import Main from './Main/Main';
 import Seguimiento from './Seguimiento/Seguimiento';
 import Reporte from './Reportes/Reportes';
 import Empleados from './Empleados/Empleados';

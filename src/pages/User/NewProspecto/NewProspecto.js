@@ -1,6 +1,6 @@
 import React from 'react'
 import "./newProspecto.css"
-import Navbar from '../User/components/Navbar/Navbar.js'
+import Navbar from '../components/Navbar/Navbar'
 import NewProspectoForm from './NewProspectoForm'
 
 const NewProspecto = () => {

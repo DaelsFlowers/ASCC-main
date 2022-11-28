@@ -1,5 +1,5 @@
 import React from 'react'
-import "./MainUser.css"
+import "./Main.css"
 import Navbar from '../components/Navbar/Navbar'
 import BoxUser from './Box'
 

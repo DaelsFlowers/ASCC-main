@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import "./reportesContent.css"
-import msg from "../../image/msg.png"
-import call from "../../image/call.png"
-import mail from "../../image/mail.png"
+import msg from "../../../image/msg.png"
+import call from "../../../image/call.png"
+import mail from "../../../image/mail.png"
 
-import ClientDataService from "../services/Clients.services"
-import ProspectoDataService from "../services/Prospectos.services"
+import ClientDataService from "../../services/Clients.services"
+import ProspectoDataService from "../../services/Prospectos.services"
 
 
 const ReportesContent = () => {
