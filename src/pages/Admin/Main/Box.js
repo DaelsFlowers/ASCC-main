@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Box.css"
-const BoxUser = () => {
+const Box = () => {
 
 
     return (
@@ -44,4 +44,4 @@ const BoxUser = () => {
     )
 }
 
-export default BoxUser
+export default Box 

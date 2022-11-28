@@ -1,6 +1,6 @@
 import React from 'react'
 import "./newClient.css"
-import Navbar from '../components/Navbar/Navbar.js'
+import Navbar from '../User/components/Navbar/Navbar.js'
 import NewClientForm from './NewClientForm'
 
 const NewClient = () => {

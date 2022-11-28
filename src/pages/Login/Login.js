@@ -2,13 +2,14 @@ import * as React from 'react';
 import "./Login.css"
 
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { auth } from "../components/firebase"
+import { auth } from "../services/firebase"
 
 
 function Login({
     setAuthState,
     setUser
 }) {
+
     const [email, setEmail] = React.useState('');
     const [password, setPassword] = React.useState('');
 
@@ -19,6 +20,8 @@ function Login({
                     setUser(email)
                     setAuthState('home')
                 });
+        } else {
+            alert("USUARIO NO ENCONTRADO");
         }
     }
     return (

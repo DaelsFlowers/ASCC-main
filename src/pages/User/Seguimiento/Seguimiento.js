@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../components/Navbar/Navbar.js'
+import Navbar from '../components/Navbar/Navbar'
 import "./seguimiento.css"
 import SeguimientoContent from './SeguimientoContent.js'
 const Seguimiento = () => {

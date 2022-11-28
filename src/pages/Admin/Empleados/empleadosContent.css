@@ -1,6 +1,5 @@
 .EmpleadoContent {
-  min-width: 90%;
-  min-height: 100%;
+  max-width: 90%;
   right: 0;
   position: absolute;
   z-index: -1;
@@ -30,7 +29,7 @@
 .gridEmpleado {
   min-width: 100%;
   display: grid;
-  grid-template-columns: 0.25fr repeat(8, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   text-align: center;
   align-items: center;
 }
@@ -55,7 +54,7 @@
 .gridEmpleadoList {
   min-width: 100%;
   display: grid;
-  grid-template-columns: 0.25fr repeat(8, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   text-align: center;
   align-items: center;
 }
@@ -67,7 +66,7 @@
   font-size: 16px;
   line-height: 19px;
   color: #000000;
-  max-width: 15rem;
+  min-width: 0.1rem;
   text-align: center;
 }
 
@@ -79,7 +78,9 @@
 
 .sqllist {
   overflow: auto;
-  max-height: 43rem;
+  min-height: min-content;
+  max-height: 36rem;
+  scroll-behavior: smooth;
 }
 
 .add {
@@ -87,7 +88,6 @@
 }
 
 .addcontent {
-  display: flex;
   justify-content: center;
   margin: 0 0 0.5rem 0;
 }

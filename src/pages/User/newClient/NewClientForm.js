@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "./newClientForm.css"
 
-import ClientDataService from "../services/Clients.services"
+import ClientDataService from "../../services/Clients.services"
 
 
 const NewClientForm = () => {

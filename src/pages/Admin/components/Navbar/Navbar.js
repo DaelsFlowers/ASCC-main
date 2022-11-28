@@ -1,9 +1,9 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
-import "./navbar.css"
+import "./Navbar.css"
 
 import { signOut } from 'firebase/auth';
-import { auth } from "../firebase"
+import { auth } from "../../../services/firebase"
 
 export default function Home({
     setAuthState,
@@ -27,18 +27,7 @@ export default function Home({
                 <h1>ASCC</h1>
             </NavLink>
             <ol className='navbarlist'>
-                <NavLink className={({ isActive }) => (isActive ? "active" : "desactive")}
-                    to="/NewClient">
-                    <li>
-                        Nuevo Cliente
-                    </li>
-                </NavLink>
-                <NavLink to="/NewProspecto">
-                    <li>
-                        Nuevo Prospecto
-                    </li>
-                </NavLink>
-                <NavLink to="/Seguimiento">
+                <NavLink to="/Seguimiento" className={({ isActive }) => (isActive ? "active" : "desactive")}>
                     <li>
                         Segumiento
                     </li>

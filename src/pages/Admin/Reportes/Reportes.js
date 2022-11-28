@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../components/Navbar/Navbar.js'
+import Navbar from '../components/Navbar/Navbar'
 import "./reportes.css"
 import ReporteContent from "./ReportesContent.js"
 const Reporte = () => {

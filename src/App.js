@@ -1,36 +1,56 @@
-
 import React from 'react';
-import { auth } from "./pages/components/firebase"
+import { auth, db } from "./pages/services/firebase"
 import { onAuthStateChanged } from 'firebase/auth';
+import {
+  doc,
+  getDoc
+} from 'firebase/firestore'
+
 
 //#region pages
 import Home from "./pages/Login/Home"
-import Principal from './pages/Principal';
+import UserControler from './pages/services/UserControler';
 //#endregion
+
+
+
 
 function App() {
 
   const [user, setUser] = React.useState(null);
-  const [authState, setAuthState] = React.useState(null);
 
-  React.useEffect(() => {
-    const unSubcribeAuth = onAuthStateChanged(auth, async authenticatedUser => {
-      if (authenticatedUser) {
-        setUser(authenticatedUser.email)
-        setAuthState("home");
-      } else {
-        setUser(null);
-        setAuthState("login");
+
+
+  async function getRol(uid) {
+    const docuRef = doc(db, `Empleados/${uid}`)
+    const docuCifrada = await getDoc(docuRef);
+    const infoFinal = docuCifrada.data().rol;
+    return infoFinal
+  }
+
+  function setuserWithFirebaseAndRol(authenticatedUser) {
+    getRol(authenticatedUser.uid).then((rol) => {
+      const userdata = {
+        uid: authenticatedUser.uid,
+        email: authenticatedUser.email,
+        rol: rol
+      };
+      setUser(userdata)
+      console.log("usarData final", userdata)
+    });
+  }
+
+  onAuthStateChanged(auth, async authenticatedUser => {
+    if (authenticatedUser) {
+      if (!user) {
+        setuserWithFirebaseAndRol(authenticatedUser)
       }
-    })
-    return unSubcribeAuth;
-  }, [user])
+    } else {
+      setUser(null);
+    }
+  })
 
-  if (authState === null) return <div>loading...</div>
-  if (authState === 'login') return <Home setAuthState={setAuthState} setUser={setUser} />
-  if (authState === 'home') return <Principal setAuthState={setAuthState} setUser={setUser} />
-  if (user) return <Principal user={user} setAuthState={setAuthState} setUser={setUser} />
-
+  return <>{user ? <UserControler user={user} /> : <Home />}</>
 }
 
 export default App;

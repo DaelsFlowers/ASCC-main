@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react'
 import "./seguimientoContent.css"
 import { NavLink } from "react-router-dom";
 
-import ClientDataService from "../services/Clients.services"
-import ProspectoDataService from "../services/Prospectos.services"
+import ClientDataService from "../../services/Clients.services"
+import ProspectoDataService from "../../services/Prospectos.services"
 
 import Mycomponent from './Editregisters';
 

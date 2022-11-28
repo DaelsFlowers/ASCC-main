@@ -1,9 +1,9 @@
 import React from 'react'
 import "./MainUser.css"
 import Navbar from '../components/Navbar/Navbar'
-import BoxUser from './BoxUser'
+import BoxUser from './Box'
 
-const MainUser = () => {
+const Main = () => {
     return (
         <body>
             <div className='navbar2'>
@@ -16,4 +16,4 @@ const MainUser = () => {
     )
 }
 
-export default MainUser
+export default Main
