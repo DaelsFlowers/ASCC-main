@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+}
+.Home {
+  text-align: center;
+  background-image: url("../../image/City.jpg");
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+}

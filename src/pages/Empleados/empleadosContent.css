@@ -1,0 +1,179 @@
+.EmpleadoContent {
+  min-width: 90%;
+  min-height: 100%;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.EmpleadoTittle {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 0.5rem;
+}
+
+.EmpleadoContentTags {
+  background: #595959;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  margin: 0 0 1% 0;
+}
+
+.gridEmpleado {
+  min-width: 100%;
+  display: grid;
+  grid-template-columns: 0.25fr repeat(8, 1fr);
+  text-align: center;
+  align-items: center;
+}
+
+.items {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.EmpleadoContentList {
+  background: #d9d9d9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.gridEmpleadoList {
+  min-width: 100%;
+  display: grid;
+  grid-template-columns: 0.25fr repeat(8, 1fr);
+  text-align: center;
+  align-items: center;
+}
+
+.itemsList {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  max-width: 15rem;
+  text-align: center;
+}
+
+.listEmpleado {
+  background-color: #c2c2c2;
+  width: 98%;
+  margin: auto;
+}
+
+.sqllist {
+  overflow: auto;
+  max-height: 43rem;
+}
+
+.add {
+  margin: 2rem 1rem;
+}
+
+.addcontent {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 0.5rem 0;
+}
+
+.addgrid {
+  min-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 0.75fr) 1fr 0.75fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+  text-align: center;
+  align-items: center;
+}
+
+.additem {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  text-align: left;
+  min-width: 10rem;
+}
+
+.addaplicate {
+  background-color: #fff;
+  max-width: 100%;
+}
+
+.additemfecha {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  text-align: center;
+  border: 2px solid #fff;
+
+  margin-top: 1rem;
+}
+
+.addaplicatefecha {
+  display: flex;
+  justify-content: center;
+}
+
+.addaplicatefecha div {
+  margin: 0 1rem;
+}
+.addaplicatefecha label {
+  margin: 0 1rem;
+  font-size: 12px;
+}
+
+.addbotton {
+  max-width: 10rem;
+  padding: 0.5rem;
+  background: linear-gradient(92.04deg, #607bdc 28.67%, #663bb6 77.93%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.addbottonText {
+  text-align: center;
+  font-family: "Rubik";
+  font-size: 18px;
+  color: #001049;
+}
+
+.itemList-btn {
+  margin: 5px;
+  padding: 5px;
+  background-color: #36324b;
+  border-radius: 2px;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.36);
+  color: #fff;
+  cursor: pointer;
+}
+.itemList-btn2 {
+  margin: 5px;
+  padding: 5px;
+  background-color: #e83e3e;
+  border-radius: 2px;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.36);
+  color: #fff;
+  cursor: pointer;
+}

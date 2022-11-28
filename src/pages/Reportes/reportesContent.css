@@ -1,0 +1,197 @@
+.ReportesContent {
+  min-width: 90%;
+  min-height: 100%;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.ReportesTittle {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 0.5rem;
+}
+
+.ReportesCategoria {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #1e1e1e;
+}
+.ReportesContentTags {
+  background: #595959;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  margin: 0 0 0.5rem 0;
+}
+
+.gridReportes {
+  min-width: 100%;
+  display: grid;
+  grid-template-columns: 0.15fr repeat(5, 0.25fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 2px;
+  grid-row-gap: 0px;
+  text-align: center;
+  align-items: center;
+}
+
+.items {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.ReportesContentList {
+  background: #d9d9d9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.gridReportesList {
+  min-width: 100%;
+  display: grid;
+  grid-template-columns: 0.15fr repeat(5, 0.25fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 2px;
+  grid-row-gap: 0px;
+  text-align: center;
+  align-items: center;
+}
+
+.itemsList {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  max-width: 15rem;
+  text-align: center;
+}
+
+.listReportes {
+  background-color: #c2c2c2;
+}
+
+.sqllist {
+  overflow: auto;
+  max-height: 43rem;
+}
+
+.query {
+  margin: 2rem 1rem;
+}
+
+.querycontent {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 0.5rem 0;
+}
+
+.querygrid {
+  min-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+  text-align: center;
+  align-items: center;
+}
+
+.queryitem {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  text-align: left;
+  min-width: 10rem;
+}
+
+.queryaplicate {
+  background-color: #fff;
+  max-width: 100%;
+  min-width: 20rem;
+}
+
+.queryitemfecha {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  text-align: center;
+  border: 2px solid #fff;
+
+  margin-top: 1rem;
+}
+
+.queryaplicatefecha {
+  display: flex;
+  justify-content: center;
+}
+
+.queryaplicatefecha div {
+  margin: 0 1rem;
+}
+.queryaplicatefecha label {
+  margin: 0 1rem;
+  font-size: 12px;
+}
+
+.querybotton {
+  max-width: 10rem;
+  padding: 0.5rem;
+  background: linear-gradient(92.04deg, #607bdc 28.67%, #663bb6 77.93%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.querybottonText {
+  text-align: center;
+  font-family: "Rubik";
+  font-size: 18px;
+  color: #001049;
+}
+.TotalNoti {
+  background-color: #fff;
+  display: flex;
+  font-family: "Rubik";
+  font-size: 18px;
+  width: min-content;
+  margin: auto;
+}
+.TotalNoti img {
+  width: 25px;
+}
+.TotalNoti div {
+  margin: 0rem 1rem;
+  align-items: center;
+  display: flex;
+  min-width: 5rem;
+}
+
+.TotalContent {
+  background-color: #fff;
+}

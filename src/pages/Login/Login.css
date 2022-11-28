@@ -1,0 +1,117 @@
+.login {
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.34);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-right: 5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  min-width: 27%;
+  min-height: 70%;
+  font-family: "MuseoModerno", cursive;
+}
+.loginlogo {
+  font-family: "MuseoModerno", cursive;
+  text-shadow: 5px 0px 5px rgba(0, 0, 0, 0.25);
+  font-size: 40px;
+}
+.ingresa {
+  font-size: 18px;
+}
+.top {
+  display: block;
+  align-items: flex-start;
+  justify-content: space-around;
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+  border-radius: 4px;
+}
+
+div.container {
+  display: block;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-top: 30px;
+  border-radius: 4px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+:root {
+  --omrs-color-ink-medium-contrast: rgb(255, 255, 255);
+  --omrs-color-interaction-minus-two: rgba(73, 133, 224, 0.12);
+}
+/** END: Non Openmrs CSS **/
+div.omrs-input-group {
+  margin-bottom: 1.5rem;
+  position: relative;
+  width: 20rem;
+}
+
+/* Input*/
+.omrs-input-underlined > input,
+.omrs-input-filled > input {
+  border: none;
+  border-bottom: 0.125rem solid var(--omrs-color-ink-medium-contrast);
+  width: 100%;
+  height: 2rem;
+  font-size: 1.0625rem;
+  padding-left: 0.875rem;
+  line-height: 147.6%;
+  padding-top: 0.825rem;
+  padding-bottom: 0.5rem;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.omrs-input-underlined > input:focus,
+.omrs-input-filled > input:focus {
+  outline: none;
+}
+
+.omrs-input-underlined > .omrs-input-label,
+.omrs-input-filled > .omrs-input-label {
+  position: absolute;
+  top: 0.9375rem;
+  left: 0.875rem;
+  line-height: 147.6%;
+  color: var(--omrs-color-ink-medium-contrast);
+  transition: top 0.2s;
+}
+
+.omrs-input-underlined > input:hover,
+.omrs-input-filled > input:hover {
+  background: var(--omrs-color-interaction-minus-two);
+  border-color: var(--omrs-color-ink-high-contrast);
+}
+
+.omrs-input-underlined > input:focus + .omrs-input-label,
+.omrs-input-underlined > input:valid + .omrs-input-label,
+.omrs-input-filled > input:focus + .omrs-input-label,
+.omrs-input-filled > input:valid + .omrs-input-label {
+  top: 0;
+  font-size: 0.9375rem;
+  margin-bottom: 32px;
+}
+
+.btn-grad {
+  background-image: linear-gradient(to right, #1be2be 0%, #0053fa 30%);
+  margin: 10px;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  font-family: "Rubik", sans-serif;
+  color: white;
+  display: block;
+}
+
+.btn-grad:hover {
+  box-shadow: 0 0 2px #eee;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}

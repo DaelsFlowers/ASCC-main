@@ -1,0 +1,98 @@
+.newClientForm {
+  background-color: rgba(102, 51, 153, 0);
+  width: 89%;
+  height: 100%;
+  right: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+.tittle {
+  font-family: "Rubik", sans-serif;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.contentClientForm {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  position: absolute;
+  margin-top: 1rem;
+  width: 95%;
+  min-height: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.newclientFormform {
+  position: absolute;
+  margin-top: 3rem;
+  min-width: 100%;
+}
+
+.newClientForm1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.newClientFormInput {
+  font-family: "Rubik", sans-serif;
+  background: #d9d9d9;
+  border: 1px solid #6c6c6c;
+  color: #001049;
+}
+
+.newClientForm1 input {
+  font-family: "Rubik", sans-serif;
+  width: 99.5%;
+  background: #ffffff;
+  border: 1px solid #6c6c6c;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 1.5rem;
+}
+
+.newClientFormInput {
+  margin: 0 1rem 0 1rem;
+}
+
+.empresa {
+  width: 40rem;
+}
+.nombre {
+  width: 40rem;
+}
+.correo {
+  width: 40rem;
+}
+.telefono {
+  width: 19rem;
+}
+.puesto {
+  width: 19rem;
+}
+.puesto select {
+  width: 19rem;
+  height: 1.75rem;
+}
+.etiqueta {
+  width: 82rem;
+}
+.newClientFormButtom {
+  right: 0;
+  bottom: 0;
+  margin: 0 2rem 2rem 0;
+  width: 10rem;
+  padding: 1rem;
+  position: absolute;
+  background: linear-gradient(92.04deg, #607bdc 28.67%, #663bb6 77.93%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.newClientFormButtomText {
+  text-align: center;
+  font-family: "Rubik";
+  font-size: 18px;
+  color: #001049;
+}
